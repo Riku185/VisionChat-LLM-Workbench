@@ -1,22 +1,49 @@
 # Vision Chat: LLM Performance Workbench 🚀
 
-Vision Chat is a dynamic, multi-model desktop environment designed for interacting with local Large Language Models (LLMs) and Vision Models via [Ollama](https://ollama.com/). Built with a sleek **PyQt6** interface, it serves not only as a chat client but as a full-fledged **Performance Workbench**, offering real-time hardware telemetry and inference analytics.
+Vision Chat is a dynamic, multi-model desktop environment engineered for interacting with local Large Language Models (LLMs) and Vision Models via [Ollama](https://ollama.com/). Built from the ground up with a highly responsive **PyQt6** interface, it transcends typical chat clients by serving as a full-fledged **Performance Workbench**. It integrates advanced UI features, session management, and production-grade real-time hardware telemetry to offer an unparalleled local AI experience.
 
-## ✨ Features
+## ✨ Comprehensive Feature Guide
 
-- **Multi-Model Support:** Seamlessly switch between text-only and vision-capable local models available on your Ollama server.
-- **Real-Time Telemetry Sidebar:** Monitor your system's health live with gradient-filled graphs tracking:
-  - CPU & RAM usage
-  - GPU & VRAM usage (Absolute and Percentage)
-  - **Live GPU Temperature & Power Consumption** (via `nvidia-smi`)
-- **Live Inference Stats:** Track your model's performance with a dedicated **Tokens Per Second (TPS)** gauge and state indicator (Idle, Loading, Running).
-- **Floating Performance Overlay:** A detachable, frameless, and draggable "FPS-counter style" overlay showing critical metrics (TPS, Latency, VRAM) on top of other windows.
-- **Session Analytics & Management:** Export/import chat sessions and view peak memory/VRAM usage during inference.
+Here is a detailed breakdown of what Vision Chat has to offer:
+
+### 1. Multi-Model Engine & Vision Integration
+- **Dynamic Model Selector:** Automatically fetches and categorizes locally available models from your Ollama instance.
+- **Seamless Switching:** Switch instantly between text-only and vision-capable local models without restarting the application.
+- **Image Upload Area:** Intuitive drag-and-drop or click-to-upload interface for providing visual context to multi-modal networks.
+
+### 2. Real-Time Hardware Telemetry (Stats Panel)
+Monitor your system's health live with highly accurate, gradient-filled graphs:
+- **Granular Tracking:** Features 1 MB granularity tracking for CPU, RAM, GPU, and VRAM.
+- **High-Frequency Polling:** Match Windows Task Manager refresh rates for near real-time accuracy.
+- **Advanced GPU Metrics:** Native `nvidia-smi` integration tracks **Live GPU Temperature** and **Power Consumption**.
+
+### 3. High-Fidelity Inference Analytics
+Deep dive into your local model's performance on a per-response basis:
+- **Tokens Per Second (TPS):** Track exact generation speed with a dedicated live gauge.
+- **Latency Tracking:** Measures critical metrics like Time-to-First-Token (TTFT) and total response duration.
+- **State Indicators:** Real-time feedback on model state (Idle, Loading, Running).
+
+### 4. Floating Performance Overlay
+- **Global Monitoring:** A detachable, frameless, and draggable "FPS-counter style" overlay.
+- **Always on Top:** Keeps critical LLM inference stats (TPS, Latency, VRAM) visible on your desktop while you work in other IDEs or applications.
+
+### 5. Dynamic Context Window Visualizer
+- **Context Bar:** A visual tracker that helps you monitor exactly how much of the LLM's context window is currently being consumed by the conversation, preventing out-of-memory errors and context truncation.
+
+### 6. Advanced UI & Chat Experience
+- **Rich Text & Code Rendering:** Full Markdown support with code block syntax highlighting.
+- **Pinch-to-Zoom:** Easily scale text size dynamically with touchpad gestures for accessibility and comfort.
+- **Session Management:** Robust tools to organize, import, export, and persist your chat sessions securely.
+
+### 7. Integrated Developer Tools
+- **Terminal Panel:** A built-in terminal logging interface that surfaces system warnings, inference state changes, and Ollama server logs right inside the application.
+
+---
 
 ## 🛠️ Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-* **Operating System:** Windows (for accurate `nvidia-smi` and memory polling)
+* **Operating System:** Windows (Required for accurate `nvidia-smi` telemetry and memory polling)
 * **Python Version:** Python 3.10 or higher
 * **Local LLM Engine:** [Ollama](https://ollama.com/) must be installed and running in the background.
 * **NVIDIA GPU:** Required for full hardware telemetry (VRAM, Temperature, Power).
@@ -53,7 +80,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## 📸 Screenshots
 
-Screenshots is available in the assets folder, Kindly check 'em out over there
+Screenshots of the app are available in the assets folder, Kindly check 'em out for as to how the app looks
 
 ## 🤝 Contributing
 
