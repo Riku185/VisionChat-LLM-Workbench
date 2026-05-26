@@ -1,0 +1,275 @@
+/* ══════════════════════════════════════════════════════════
+   Vision Chat — Premium Dark Theme
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Global ─────────────────────────────────────────────── */
+QWidget {
+    background-color: #0D0D0D;
+    color: #ECECEC;
+    font-family: "Segoe UI", "Inter", "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+QMainWindow {
+    background-color: #0D0D0D;
+}
+
+/* ── Scroll Bars ────────────────────────────────────────── */
+QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+QScrollBar:horizontal {
+    background: transparent;
+    height: 8px;
+    margin: 0;
+}
+QScrollBar::handle:horizontal {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    min-width: 30px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0;
+}
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: transparent;
+}
+
+/* ── Buttons ────────────────────────────────────────────── */
+QPushButton {
+    background-color: #1E1E1E;
+    color: #ECECEC;
+    border: 1px solid #2A2A2A;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+QPushButton:hover {
+    background-color: #333333;
+    border-color: #444444;
+}
+QPushButton:pressed {
+    background-color: #252525;
+}
+QPushButton:disabled {
+    color: #555555;
+    background-color: #151515;
+    border-color: #1E1E1E;
+}
+
+QPushButton#sendButton {
+    background-color: #6C63FF;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 16px;
+    color: white;
+    font-weight: 600;
+}
+QPushButton#sendButton:hover {
+    background-color: #8B83FF;
+}
+QPushButton#sendButton:pressed {
+    background-color: #4A42CC;
+}
+QPushButton#sendButton:disabled {
+    background-color: #2A2A40;
+    color: #555555;
+}
+
+QPushButton#menuButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+QPushButton#menuButton:hover {
+    background-color: #1E1E1E;
+}
+
+/* ── Text Inputs ────────────────────────────────────────── */
+QTextEdit, QPlainTextEdit {
+    background-color: #1E1E1E;
+    color: #ECECEC;
+    border: 1px solid #2A2A2A;
+    border-radius: 12px;
+    padding: 10px 14px;
+    selection-background-color: #6C63FF;
+}
+QTextEdit:focus, QPlainTextEdit:focus {
+    border-color: #6C63FF;
+}
+
+QLineEdit {
+    background-color: #1E1E1E;
+    color: #ECECEC;
+    border: 1px solid #2A2A2A;
+    border-radius: 8px;
+    padding: 8px 12px;
+    selection-background-color: #6C63FF;
+}
+QLineEdit:focus {
+    border-color: #6C63FF;
+}
+
+/* ── Labels ─────────────────────────────────────────────── */
+QLabel {
+    background-color: transparent;
+    color: #ECECEC;
+}
+QLabel#secondaryLabel {
+    color: #8E8E93;
+    font-size: 12px;
+}
+QLabel#titleLabel {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ECECEC;
+}
+QLabel#accentLabel {
+    color: #6C63FF;
+    font-weight: 600;
+}
+
+/* ── Splitter ───────────────────────────────────────────── */
+QSplitter::handle {
+    background-color: #1E1E1E;
+    width: 1px;
+}
+QSplitter::handle:hover {
+    background-color: #6C63FF;
+}
+
+/* ── Panels ─────────────────────────────────────────────── */
+QFrame#statsPanel {
+    background-color: #141414;
+    border-right: 1px solid #1E1E1E;
+}
+QFrame#chatPanel {
+    background-color: #0D0D0D;
+}
+QFrame#menuPanel {
+    background-color: #141414;
+    border-left: 1px solid #1E1E1E;
+}
+QFrame#terminalPanel {
+    background-color: #0A0A0A;
+    border-top: 1px solid #2A2A2A;
+    border-radius: 12px 12px 0 0;
+}
+
+/* ── Chat Bubbles ───────────────────────────────────────── */
+QFrame#userBubble {
+    background-color: #2A2A40;
+    border-radius: 16px;
+    border-bottom-right-radius: 4px;
+}
+QFrame#assistantBubble {
+    background-color: #1A1A2E;
+    border-radius: 16px;
+    border-bottom-left-radius: 4px;
+}
+
+/* ── Upload Area ────────────────────────────────────────── */
+QFrame#uploadArea {
+    background-color: #141414;
+    border: 2px dashed #2A2A2A;
+    border-radius: 16px;
+}
+QFrame#uploadArea:hover {
+    border-color: #6C63FF;
+    background-color: #1A1A2E;
+}
+
+/* ── Tooltip ────────────────────────────────────────────── */
+QToolTip {
+    background-color: #1E1E1E;
+    color: #ECECEC;
+    border: 1px solid #2A2A2A;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+/* ── Menu Flyout ────────────────────────────────────────── */
+QFrame#menuFlyout {
+    background-color: #171717;
+    border: 1px solid #2A2A2A;
+    border-radius: 12px;
+}
+QPushButton#flyoutButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 14px;
+    color: #ECECEC;
+}
+QPushButton#flyoutButton:hover {
+    background-color: #1E1E1E;
+}
+
+/* ── Terminal ───────────────────────────────────────────── */
+QPlainTextEdit#terminalOutput {
+    background-color: #0A0A0A;
+    color: #4FC3F7;
+    font-family: "Cascadia Code", "Consolas", monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    padding: 8px;
+}
+QLineEdit#terminalInput {
+    background-color: #141414;
+    color: #4FC3F7;
+    font-family: "Cascadia Code", "Consolas", monospace;
+    font-size: 13px;
+    border: 1px solid #2A2A2A;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+QLineEdit#terminalInput:focus {
+    border-color: #4FC3F7;
+}
+
+/* ── Loading Dots ───────────────────────────────────────── */
+QLabel#loadingLabel {
+    color: #8E8E93;
+    font-size: 14px;
+    background: transparent;
+}
+
+/* ── Status Bar ─────────────────────────────────────────── */
+QStatusBar {
+    background-color: #141414;
+    border-top: 1px solid #1E1E1E;
+    color: #8E8E93;
+    font-size: 12px;
+}
+QStatusBar QLabel {
+    color: #8E8E93;
+    background: transparent;
+}

@@ -1,0 +1,8 @@
+PyQt6>=6.6
+pyqtgraph>=0.13
+ollama>=0.4
+psutil>=5.9
+GPUtil>=1.4
+opencv-python>=4.9
+numpy>=1.24
+pyttsx3>=2.90
